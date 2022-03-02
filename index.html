@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pets</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <!--Bloco Cadastro-->
+    <main>
+        <img src="Imagens/pet.png" alt="cachorro e gato">
+        <h1>Cadastrar Pet</h1>
+        <!--Formulário-->
+        <form>
+            <!--Nome e Idade-->
+            <div class="nomeIdade">
+                <input type="text" placeholder="Nome do Pet" class="nome" id="nome">
+                <input type="number" min="1" placeholder="Idade" class="idade" id="idade">
+            </div>
+            <!--Email-->
+            <input type="email" placeholder="Email do Responsavel" class="email" id="email">
+            <!--Contato-->
+            <input type="tel" id="telefone" placeholder="DDD+Tel: Somente Numeros"
+                pattern="[0-9]{11}" required  class="telefone">
+            <small>Formato: 27999009900</small>
+            <!--Selecionar Espécie-->
+            <p>Espécie</p>
+            <div class="radio">
+                <span>
+                    <input type="radio" name="especie" checked id="canino">
+                    <label for="Cão">Canino</label>
+                </span>
+                <span>
+                    <input type="radio" name="especie" id="felino">
+                    <label for="Gato">Felino</label>
+                </span>
+            </div>
+            <p>Porte</p>
+            <div class="radio">
+                <span>
+                    <input type="radio" name="porte" checked id="pequeno">
+                    <label for="Pequeno">Pequeno</label>
+                </span>
+                <span>
+                    <input type="radio" name="porte" id="medio">
+                    <label for="Médio">Médio</label>
+                </span>
+                <span>
+                    <input type="radio" name="porte" id="grande">
+                    <label for="Grande">Grande</label>
+                </span>
+            </div>
+
+            <button onclick="cadastrar()">Cadastrar</button>
+        </form>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

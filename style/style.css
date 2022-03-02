@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root{
+    /*Background Color*/
+    --cor1 : #2DAA6D;
+    /*Cor do Botão*/
+    --cor2 : #36D286;
+    /*Cor dos Inputs*/
+    --cor3 : #DDDDDD;
+    /*Cor das Labels*/
+    --cor4 : #484848;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+main{
+    position: relative;
+    background-color: white;
+    padding: 30px 30px 60px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+}
+main h1{
+    color: var(--cor1);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+input{
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px 0px;
+    padding: 0.7rem 1rem;
+    color: var(--cor4);
+    font-size: .75em;
+}
+small{
+    text-align: center;
+    font-size: 0.9em;
+    color: lightgray;
+}
+button{
+    background-color: var(--cor2);
+    border: none;
+    padding: 0.7rem 1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: var(--cor1);
+}
+.nomeIdade{
+    display: flex;
+    justify-content: space-between;
+}
+.nome{
+    width: 65%;
+}
+.idade{
+    width: 30%;
+}
+.radio{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+p{
+    margin: 10px 0px 5px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    justify-content: space-between;
+}
+img{
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    top: -90px;
+    transform: translateX(40%);
+}
